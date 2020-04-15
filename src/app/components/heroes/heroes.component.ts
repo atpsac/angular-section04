@@ -3,19 +3,19 @@ import { HeroesService, Heroe } from '../../services/heroes.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: "app-heroes",
+  selector: 'app-heroes',
   templateUrl: './heroes.component.html'
 })
 export class HeroesComponent implements OnInit {
   heroes: Heroe[] = [];
 
   constructor(
-    private _heroesService: HeroesService,
+    private heroesService: HeroesService,
     private router: Router
     ) {}
 
   ngOnInit() {
-    this.heroes = this._heroesService.getHeroes();
+    this.heroes = this.heroesService.getHeroes();
     // console.log(this.heroes);
   }
 
