@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: "app-heroes",
-  templateUrl: "./heroes.component.html"
+  templateUrl: './heroes.component.html'
 })
 export class HeroesComponent implements OnInit {
   heroes: Heroe[] = [];
